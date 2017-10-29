@@ -132,7 +132,7 @@ def drain():
     else:
         letdrain = []
         for i, j in players[active_player].drain:
-            nx, ny = players[active_player].x + i, players[active_player].yi + j
+            nx, ny = players[active_player].x + i, players[active_player].y + j
             if 0 <= nx < 10 and 0 <= ny < 10:
                 if field[nx][ny].zatopl == 1:
                     letdrain.append([nx, ny])
