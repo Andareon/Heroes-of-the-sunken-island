@@ -27,6 +27,7 @@ class Stock(sprite.Sprite):
         self.y = 61 * y + 1
         self.rect = (61 * x + 1, 61 * y + 1, 60, 60)
         self.zatopl = 0
+        self.resind = 5
         
         des = open('Description/stock.txt', 'r')
         self.description = []
